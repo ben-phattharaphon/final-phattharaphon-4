@@ -5,10 +5,50 @@
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 generator client {
-  provider = "prisma-client"
+  provider = "prisma-client-js"
   output   = "../src/generated/prisma"
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
+}
+
+enum Role {
+  DOCTOR
+  USER
+}
+
+model Doctor {
+  id             Int          @id @default(autoincrement())
+  username       String
+  password       String
+  specialization String
+  doctorNotes    DoctorNote[]
+}
+
+model User {
+  id          Int          @id @default(autoincrement())
+  username    String
+  password    String
+  doctorNotes DoctorNote[]
+}
+
+model DoctorNote {
+  id Int @id @default(autoincrement())
+
+  doctorId Int
+  userId   Int
+
+  doctor Doctor @relation(fields: [doctorId], references: [id])
+  user   User   @relation(fields: [userId], references: [id])
+
+  note      String
+  createdAt DateTime
+}
+
+model HealthRecord {
+  id    Int      @id @default(autoincrement())
+  type  String
+  value String
+  date  DateTime
 }
