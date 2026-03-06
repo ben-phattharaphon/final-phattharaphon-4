@@ -4,3 +4,14 @@
 GET {{BASE_URL}}/users/me
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJiYiIsImlhdCI6MTc3Mjc5MjE5MiwiZXhwIjoxNzcyODc4NTkyfQ.YP1DmNo_JgGE6r2gZOQRdxo_M3ycMyPZMW5ZvYLwbqU
+
+### POST Me Users
+POST {{BASE_URL}}/users/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJiYiIsImlhdCI6MTc3Mjc5NTMxMCwiZXhwIjoxNzcyODgxNzEwfQ.NxQgL392Uknk6CJ-HI8HAmB4f1XoIklrw2nSISz8Grc
+
+{
+    "username": "xxx",
+    "password": "b123"
+
+}

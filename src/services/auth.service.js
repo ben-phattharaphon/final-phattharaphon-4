@@ -52,12 +52,12 @@ export const createPatUser = async (username, hashPassword) => {
 };
 
 //  แก้ไข คนไข้
-export const editPatUser = async (username, hashPassword, specialization) => {
+export const editPatUser = async (newUsername, hashPassword, id) => {
   const result = await prisma.user.update({
-    where: { username },
+    where: { id },
     data: {
+      username: newUsername,
       password: hashPassword,
-      specialization,
     },
   });
   return result;
