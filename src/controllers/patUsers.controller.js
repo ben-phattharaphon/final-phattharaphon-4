@@ -12,7 +12,9 @@ export async function editPatMeController(req, res, next) {
   try {
     const hashPassword = await bcrypt.hash(password, 5);
     await editPatUser(username, hashPassword, req.user.id);
-    res.status(200).json({ message: "Patient Profile Updated Successfully" });
+    res.status(200).json({
+      message: "Patient Profile Updated Successfully",
+    });
   } catch (error) {
     next(error);
   }

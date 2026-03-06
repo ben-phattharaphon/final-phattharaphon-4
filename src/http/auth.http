@@ -15,8 +15,8 @@ POST {{BASE_URL}}/auth/register/user
 Content-Type: application/json
 
 {
-  "username": "cc",
-  "password": "c123"
+  "username": "zzz",
+  "password": "z123"
 }
 
 
@@ -34,6 +34,6 @@ POST {{BASE_URL}}/auth/login/user
 Content-Type: application/json
 
 {
-  "username": "bb",
-  "password": "b123"
+  "username": "zzz",
+  "password": "z123"
 }

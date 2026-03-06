@@ -8,6 +8,6 @@ import authPatCheck from "../middleware/authPat.middleware.js";
 const usersRouter = express.Router();
 
 usersRouter.get("/me", authPatCheck, getPatMeController);
-usersRouter.post("/me", authPatCheck, editPatMeController);
+usersRouter.put("/me", authPatCheck, editPatMeController);
 
 export default usersRouter;

@@ -13,7 +13,7 @@ app.use("/users", usersRouter);
 app.use("/doctors", doctorsRouter);
 
 //เพิ่ม error
-// app.use(errHandler);
+app.use(errHandler);
 
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);

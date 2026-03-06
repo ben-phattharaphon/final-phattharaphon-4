@@ -63,6 +63,18 @@ export const editPatUser = async (newUsername, hashPassword, id) => {
   return result;
 };
 
+//  แก้ไข หมอ
+export const editDocUser = async (newUsername, hashPassword, id) => {
+  const result = await prisma.doctor.update({
+    where: { id },
+    data: {
+      username: newUsername,
+      password: hashPassword,
+    },
+  });
+  return result;
+};
+
 //Token คนไข้
 export const createPatToken = async (havePat) => {
   const payload = {

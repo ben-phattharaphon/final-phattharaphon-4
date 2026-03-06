@@ -6,12 +6,12 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJiYiIsImlhdCI6MTc3Mjc5MjE5MiwiZXhwIjoxNzcyODc4NTkyfQ.YP1DmNo_JgGE6r2gZOQRdxo_M3ycMyPZMW5ZvYLwbqU
 
 ### POST Me Users
-POST {{BASE_URL}}/users/me
+PUT {{BASE_URL}}/users/me
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJiYiIsImlhdCI6MTc3Mjc5NTMxMCwiZXhwIjoxNzcyODgxNzEwfQ.NxQgL392Uknk6CJ-HI8HAmB4f1XoIklrw2nSISz8Grc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJ6enoiLCJpYXQiOjE3NzI3OTY0NzQsImV4cCI6MTc3Mjg4Mjg3NH0.y5rBnQ1euejyXcHiqrwsZpdrQFvRIXohYBIHq4pS0N0
 
 {
-    "username": "xxx",
+    "username": "ccc",
     "password": "b123"
 
 }
