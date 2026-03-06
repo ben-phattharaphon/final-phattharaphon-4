@@ -1,0 +1,39 @@
+@BASE_URL = http://localhost:6000
+
+### DOC register
+POST {{BASE_URL}}/auth/register/doctor
+Content-Type: application/json
+
+{
+  "username": "cc",
+  "password": "c123",
+  "specialization": "Cardiologist"
+}
+
+###PAT register
+POST {{BASE_URL}}/auth/register/user
+Content-Type: application/json
+
+{
+  "username": "cc",
+  "password": "c123"
+}
+
+
+### DOC login
+POST {{BASE_URL}}/auth/login/doctor
+Content-Type: application/json
+
+{
+  "username": "aa",
+  "password": "a123"
+}
+
+###PAT login
+POST {{BASE_URL}}/auth/login/user
+Content-Type: application/json
+
+{
+  "username": "bb",
+  "password": "b123"
+}

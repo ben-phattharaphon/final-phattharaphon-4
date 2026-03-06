@@ -1,4 +1,0 @@
-@BASE_URL = http://localhost:6000
-
-### DOC GET
-GET {{BASE_URL}}/doctor

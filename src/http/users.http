@@ -1,0 +1,6 @@
+@BASE_URL = http://localhost:6000
+
+### GET ME Users
+GET {{BASE_URL}}/users/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJiYiIsImlhdCI6MTc3Mjc5MjE5MiwiZXhwIjoxNzcyODc4NTkyfQ.YP1DmNo_JgGE6r2gZOQRdxo_M3ycMyPZMW5ZvYLwbqU
